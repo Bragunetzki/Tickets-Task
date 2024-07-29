@@ -48,7 +48,6 @@ public class Main {
     private static void printFlightDurationResult(Map<String, Duration> flightDurations, String city1, String city2) {
         System.out.println("Минимальное время полета между городами " + city1 + " и " + city2 + " для каждого авиаперевозчика: ");
         for (Map.Entry<String, Duration> entry : flightDurations.entrySet()) {
-            Duration d = entry.getValue();
             System.out.println(entry.getKey() + " - " + formatDuration(entry.getValue()));
         }
     }
